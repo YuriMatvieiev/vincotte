@@ -48,8 +48,8 @@ body {
   }
   @media (any-hover: hover) {
     &:hover {
-      background: var(--blue-light);
-      color: #fff;
+      background: var(--blue-light) !important;
+      color: #fff !important;
     }
   }
   @media (max-width: $mobile) {

@@ -184,8 +184,8 @@ body {
 }
 @media (any-hover: hover) {
   .blue-button:hover {
-    background: var(--blue-light);
-    color: #fff;
+    background: var(--blue-light) !important;
+    color: #fff !important;
   }
 }
 @media (max-width: 767.98px) {
