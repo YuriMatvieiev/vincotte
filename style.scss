@@ -334,11 +334,28 @@ body {
 
     .slick-dots {
       bottom: -50px;
-      li button:before {
-        font-size: 32px !important;
-        color: var(--blue-dark);
+      li button {
+        width: 12px;
+        height: 12px;
+        &:before {
+          content: "";
+          font-size: 32px !important;
+          color: #fff;
+          opacity: 1;
+          background: #fff;
+          border: 1px solid var(--blue-dark);
+          border-radius: 50%;
+          width: 12px;
+          height: 12px;
+          line-height: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
       }
       li.slick-active button:before {
+        background: var(--blue-dark);
         opacity: 1;
       }
     }

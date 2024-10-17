@@ -530,11 +530,34 @@ body {
 .features__slick .slick-dots {
   bottom: -50px;
 }
+.features__slick .slick-dots li button {
+  width: 12px;
+  height: 12px;
+}
 .features__slick .slick-dots li button:before {
+  content: "";
   font-size: 32px !important;
-  color: var(--blue-dark);
+  color: #fff;
+  opacity: 1;
+  background: #fff;
+  border: 1px solid var(--blue-dark);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  line-height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 .features__slick .slick-dots li.slick-active button:before {
+  background: var(--blue-dark);
   opacity: 1;
 }
 @media (max-width: 991.98px) {
