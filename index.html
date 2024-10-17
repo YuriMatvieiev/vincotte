@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://www.vincotte.be/assets/tether/dist/css/tether.min.10.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.vincotte.be/assets/bootstrap/dist/css/bootstrap.min.10.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.vincotte.be/assets/font-awesome/css/font-awesome.min.10.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.vincotte.be/assets/vincotte/css/animation.10.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.vincotte.be/assets/vincotte/css/slick-theme.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://www.vincotte.be/assets/vincotte/css/vincotte.10.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.vincotte.be/assets/vincotte/css/additional-styles.10.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.vincotte.be/assets/vincotte/css/freeform.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://www.vincotte.be/assets/vincotte/css/css-new-styles.css"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/ucf5vqi.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200..400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="NL">
+    <div class="pre-header">
+      <div class="container">
+        <div class="tools">
+          <div id="header-search-form" class="expandable-search-bar">
+            <form class="search" action="https://www.vincotte.be/nl/zoeken">
+              <input
+                id="search-bar"
+                type="search"
+                class="search-bar"
+                name="q"
+                placeholder="Zoeken"
+              />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+
+          <!--<button id="header-search-toggle" type="button">
+                      <i class="fa fa-search"></i>
+                  </button>-->
+          <a
+            href="https://portal.vincotte.be"
+            target="_blank"
+            class="my-account"
+            ><i class="fa fa-user" aria-hidden="true"></i> Login
+          </a>
+
+          <ul class="language-switch">
+            <li class="dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                NL <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a
+                  class="dropdown-item"
+                  href="https://www.vincotte.be/fr/blog/vinçotte-est-autorisee-a-delivrer-des-certificats-iso-270012022-dans-le-cadre-de-la-directive-nis2"
+                  onclick="setLocaleCookie('fr')"
+                  >FR</a
+                >
+
+                <a
+                  class="dropdown-item"
+                  href="https://www.vincotte.be/en/blog/vincotte-authorized-to-issue-iso-270012022-certificates-in-nis2-context"
+                  onclick="setLocaleCookie('en')"
+                  >EN</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__menu menu">
+          <nav class="menu__body">
+            <div class="header__search">
+              <input
+                name="header-search"
+                id="header-search"
+                placeholder="Zoeken"
+              />
+              <button class="header__search-button">
+                <span class="material-symbols-outlined"> search </span>
+              </button>
+            </div>
+            <a href="#" class="header__account">
+              <span class="material-symbols-outlined"> person </span>
+              MYVINçOTTE
+            </a>
+          </nav>
+          <div class="header__language">
+            <div class="header__language-current">
+              <!-- Current language is rendered here -->
+            </div>
+            <ul id="language-box" class="header__language-options">
+              <!-- List is rendered here -->
+            </ul>
+          </div>
+          <button type="button" class="menu__icon icon-menu">
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero__container">
+        <h1 class="hero__title">
+          Vertrouw op meer dan 140 jaar expertise voor betrouwbare inspecties,
+          certificaties en advies
+        </h1>
+        <h2 class="hero__subtitle">
+          Samen bouwen aan een veilige en duurzame toekomst, gedreven door
+          vertrouwen en innovatie.
+        </h2>
+      </div>
+    </section>
+    <section class="solutions">
+      <div class="solutions__container">
+        <div class="solutions__text">
+          <h3 class="solutions__title">
+            Samen bouwen we aan een betrouwbare en toekomstgerichte omgeving,
+            met oplossingen die elke uitdaging aangaan en het verschil maken
+            voor zowel bedrijven als particulieren.
+          </h3>
+          <div class="solutions__desc">
+            Donec fringilla libero nec lectus suscipit, sed hendrerit tortor
+            blandit. Ut quis lacinia metus. Fusce neque ligula, sodales eget
+            tincidunt id, ultrices nec nunc. Nam vitae velit at libero elementum
+            porta.
+          </div>
+        </div>
+        <div
+          style="font-variation-settings: 'wght' 200"
+          class="solutions__list"
+        >
+          <div class="solutions__item">
+            <div class="solutions__item-icon">
+              <span class="material-symbols-outlined"> frame_inspect </span>
+            </div>
+            <div class="solutions__item-title">
+              Inspecties van hoge kwaliteit
+            </div>
+            <div class="solutions__item-desc">
+              Donec fringilla libero nec lectus suscipit, sed hendrerit tortor
+              blandit. Ut quis lacinia metus. Fusce neque ligula, sodales eget
+              tincidunt id, ultrices nec nunc.
+            </div>
+          </div>
+          <div class="solutions__item">
+            <div class="solutions__item-icon">
+              <span class="material-symbols-outlined"> workspace_premium </span>
+            </div>
+            <div class="solutions__item-title">Betrouwbare certificering</div>
+            <div class="solutions__item-desc">
+              Donec fringilla libero nec lectus suscipit, sed hendrerit tortor
+              blandit. Ut quis lacinia metus. Fusce neque ligula.
+            </div>
+          </div>
+          <div class="solutions__item">
+            <div class="solutions__item-icon">
+              <span class="material-symbols-outlined"> school </span>
+            </div>
+            <div class="solutions__item-title">Opleidingen</div>
+            <div class="solutions__item-desc">
+              Donec fringilla libero nec lectus suscipit, sed hendrerit tortor
+              blandit. Ut quis lacinia metus. Fusce neque ligula, sodales eget
+              tincidunt id.
+            </div>
+          </div>
+        </div>
+        <div class="solutions__buttons">
+          <a href="#" class="solutions__button blue-button"
+            >VERKEN ONZE DIENSTEN
+            <span class="material-symbols-outlined"> arrow_forward_ios </span>
+          </a>
+          <a href="#" class="solutions__button-chat blue-button"
+            >VRAAG HET AAN VINCE
+            <img src="./img/chat.png" alt="Image" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="features__container">
+        <h3 class="features__title">Uw gemoedsrust in elke stap</h3>
+        <div class="features__wrap">
+          <div
+            style="font-variation-settings: 'wght' 200"
+            class="features__cards"
+          >
+            <div class="features__cards-row">
+              <div
+                data-card="cybersecurity"
+                class="features__card features__card--active"
+              >
+                <span class="features__card-icon material-symbols-outlined">
+                  verified_user
+                </span>
+                <div class="features__card-title">Cybersecurity</div>
+                <div class="features__card-desc">
+                  Donec fringilla libero nec lectus suscipit, sed hendrerit
+                  tortor blandit. Ut quis lacinia metus. Fusce neque ligula.
+                </div>
+              </div>
+              <div data-card="lift" class="features__card">
+                <span class="features__card-icon material-symbols-outlined">
+                  rocket_launch
+                </span>
+                <div class="features__card-title">Lift inspecties</div>
+                <div class="features__card-desc">
+                  Donec fringilla libero nec lectus suscipit, sed hendrerit
+                  tortor blandit. Ut quis lacinia metus. Ut quis lacinia metus.
+                  Ut quis.
+                </div>
+              </div>
+            </div>
+            <div class="features__cards-row">
+              <div data-card="fire" class="features__card">
+                <span class="features__card-icon material-symbols-outlined">
+                  local_fire_department
+                </span>
+                <div class="features__card-title">Fire safety</div>
+                <div class="features__card-desc">
+                  Donec fringilla libero nec lectus suscipit, sed hendrerit
+                  tortor blandit. Ut quis lacinia metus.
+                </div>
+              </div>
+              <div data-card="elektriciteit" class="features__card">
+                <span class="features__card-icon material-symbols-outlined">
+                  bolt
+                </span>
+                <div class="features__card-title">Elektriciteit</div>
+                <div class="features__card-desc">
+                  Donec fringilla libero nec lectus suscipit, sed hendrerit
+                  tortor blandit. Ut quis lacinia metus.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            data-info="cybersecurity"
+            class="features__info features__info--active"
+          >
+            <div class="features__info-title">
+              Veiligheid in de digitale wereld begint met vertrouwen in onze
+              expertise.
+            </div>
+            <div class="features__info-desc">
+              Quisque id dolor sit amet neque sagittis eleifend sit amet at
+              risus. Vivamus dui nisi, maximus eget tortor ornare, aliquet
+              ullamcorper sem. Nulla dictum nisi nec commodo eleifend. Nulla
+              vitae ante justo. Ut in faucibus nisl. Sed ullamcorper tellus ac
+              risus viverra mattis. Nullam sit amet iaculis ante. Mauris id
+              commodo magna.
+            </div>
+            <a href="#" class="features__info-button blue-button"
+              >ALLES OVER CYBERSECURITY BIJ VINCOTTE
+              <span class="material-symbols-outlined"> arrow_forward_ios </span>
+            </a>
+            <ul
+              style="font-variation-settings: 'wght' 200"
+              class="features__info-list"
+            >
+              <li>
+                <span class="material-symbols-outlined"> check </span>
+                compliance-based
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>
+                risk-based
+              </li>
+            </ul>
+          </div>
+          <div data-info="lift" class="features__info">
+            <div class="features__info-title">
+              Lift inspecties. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Obcaecati, quasi.
+            </div>
+            <div class="features__info-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
+              assumenda dolorum quaerat maxime cupiditate ratione corporis natus
+              officiis, vel, nihil quasi consectetur asperiores corrupti
+              possimus ea quas minus fugiat non ducimus aliquam quod culpa
+              beatae sapiente nesciunt. Ipsa, est facilis?
+            </div>
+            <a href="#" class="features__info-button blue-button"
+              >ALLES OVER CYBERSECURITY BIJ VINCOTTE
+              <span class="material-symbols-outlined"> arrow_forward_ios </span>
+            </a>
+            <ul
+              style="font-variation-settings: 'wght' 200"
+              class="features__info-list"
+            >
+              <li>
+                <span class="material-symbols-outlined"> check </span>
+                compliance-based
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>
+                compliance-based
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>
+                risk-based
+              </li>
+            </ul>
+          </div>
+          <div data-info="fire" class="features__info">
+            <div class="features__info-title">
+              Fire safety. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Obcaecati, quasi.
+            </div>
+            <div class="features__info-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
+              assumenda dolorum quaerat maxime cupiditate ratione corporis natus
+              officiis, vel, nihil quasi consectetur asperiores corrupti
+              possimus ea quas minus fugiat non ducimus aliquam quod culpa
+              beatae sapiente nesciunt. Ipsa, est facilis?
+            </div>
+            <a href="#" class="features__info-button blue-button"
+              >ALLES OVER CYBERSECURITY BIJ VINCOTTE
+              <span class="material-symbols-outlined"> arrow_forward_ios </span>
+            </a>
+            <ul
+              style="font-variation-settings: 'wght' 200"
+              class="features__info-list"
+            >
+              <li>
+                <span class="material-symbols-outlined"> check </span>
+                compliance-based
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>
+                compliance-based
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>
+                risk-based
+              </li>
+            </ul>
+          </div>
+          <div data-info="elektriciteit" class="features__info">
+            <div class="features__info-title">
+              Elektriciteit. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Obcaecati, quasi.
+            </div>
+            <div class="features__info-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
+              assumenda dolorum quaerat maxime cupiditate ratione corporis natus
+              officiis, vel, nihil quasi consectetur asperiores corrupti
+              possimus ea quas minus fugiat non ducimus aliquam quod culpa
+              beatae sapiente nesciunt. Ipsa, est facilis?
+            </div>
+            <a href="#" class="features__info-button blue-button"
+              >ALLES OVER CYBERSECURITY BIJ VINCOTTE
+              <span class="material-symbols-outlined"> arrow_forward_ios </span>
+            </a>
+            <ul
+              style="font-variation-settings: 'wght' 200"
+              class="features__info-list"
+            >
+              <li>
+                <span class="material-symbols-outlined"> check </span>
+                compliance-based
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>
+                compliance-based
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>
+                risk-based
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="blog__container">
+        <div class="blog__header">
+          <div class="blog__header-left">
+            <div class="blog__header-title">Laatste nieuws</div>
+            <div class="blog__header-subtitle">
+              Volg onze blog en blijf up-to-date!
+            </div>
+          </div>
+          <a href="#" class="blog__header-button">
+            <span
+              style="font-variation-settings: 'wght' 200"
+              class="material-symbols-outlined"
+            >
+              menu
+            </span>
+            LEES ALLE BLOGPOSTS
+          </a>
+        </div>
+        <div class="blog__articles">
+          <div class="blog__article">
+            <a href="#" class="blog__article-img">
+              <img src="./img/article1.png" alt="Image" />
+              <div class="blog__article-date">
+                JUL.
+                <div class="blog__article-date-day">24</div>
+              </div>
+            </a>
+            <div class="blog__article-info">
+              <a href="#" class="blog__article-title">
+                Nieuw bij Vinçotte Home: online betaling voor uw particuliere
+                keuring
+              </a>
+              <div class="blog__article-tags">
+                <span
+                  style="font-variation-settings: 'wght' 200"
+                  class="material-symbols-outlined"
+                >
+                  style
+                </span>
+                <div class="blog__article-tags-links">
+                  <a href="#" class="blog__article-tag">ACTUALITEIT</a>,
+                  <a href="#" class="blog__article-tag">OPLOSSINGEN</a>
+                </div>
+              </div>
+              <div class="blog__article-desc">
+                Een keuring bestellen is sinds kort eenvoudiger dankzij de
+                on-line betalingsmogelijkheden.
+              </div>
+              <a href="#" class="blog__article-button"
+                >MEER LEZEN
+                <span class="material-symbols-outlined">
+                  arrow_forward_ios
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="blog__article">
+            <a href="#" class="blog__article-img">
+              <img src="./img/article2.png" alt="Image" />
+              <div class="blog__article-date">
+                JUL.
+                <div class="blog__article-date-day">14</div>
+              </div>
+            </a>
+            <div class="blog__article-info">
+              <a href="#" class="blog__article-title">
+                Vinçotte ontvangt ASME NQA vergadering over nucleaire
+                standaarden
+              </a>
+              <div class="blog__article-tags">
+                <span
+                  style="font-variation-settings: 'wght' 200"
+                  class="material-symbols-outlined"
+                >
+                  style
+                </span>
+                <div class="blog__article-tags-links">
+                  <a href="#" class="blog__article-tag">ACTUALITEIT</a>,
+                  <a href="#" class="blog__article-tag">OPLOSSINGEN</a>
+                </div>
+              </div>
+              <div class="blog__article-desc">
+                De meest recente vergadering van de ASME NQA internationale
+                werkgroep Europa, Midden-Oosten & Afrika vond plaats in de
+                kantoren van Vinçotte in België op 9 juli 2024.
+              </div>
+              <a href="#" class="blog__article-button"
+                >MEER LEZEN
+                <span class="material-symbols-outlined">
+                  arrow_forward_ios
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="blog__article">
+            <a href="#" class="blog__article-img">
+              <img src="./img/article3.png" alt="Image" />
+              <div class="blog__article-date">
+                JUL.
+                <div class="blog__article-date-day">12</div>
+              </div>
+            </a>
+            <div class="blog__article-info">
+              <a href="#" class="blog__article-title">
+                Vinçotte aangewezen als gecertificeerde instantie voor nucleaire
+                inspecties in Nederland
+              </a>
+              <div class="blog__article-tags">
+                <span
+                  style="font-variation-settings: 'wght' 200"
+                  class="material-symbols-outlined"
+                >
+                  style
+                </span>
+                <div class="blog__article-tags-links">
+                  <a href="#" class="blog__article-tag">ACTUALITEIT</a>,
+                  <a href="#" class="blog__article-tag">OPLOSSINGEN</a>
+                </div>
+              </div>
+              <div class="blog__article-desc">
+                Op 10 juli werd in de Nederlandse Staatscourant officieel
+                bekendgemaakt dat Vinçotte nv is benoemd tot gecertificeerde
+                instantie voor nucleaire inspecties in Nederland.
+              </div>
+              <a href="#" class="blog__article-button"
+                >MEER LEZEN
+                <span class="material-symbols-outlined">
+                  arrow_forward_ios
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="impact">
+      <div class="impact__container">
+        <h3 class="impact__title">
+          Een impact maken in uiteenlopende sectoren
+        </h3>
+        <div style="font-variation-settings: 'wght' 200" class="impact__list">
+          <a href="#" class="impact__item">
+            <span class="material-symbols-outlined impact__item-icon">
+              school
+            </span>
+            <div class="impact__item-title">
+              Opleidingen & training Vinçotte Academy
+            </div>
+          </a>
+          <a href="#" class="impact__item">
+            <span class="material-symbols-outlined impact__item-icon">
+              school
+            </span>
+            <div class="impact__item-title">Energie & procesindustrie</div>
+          </a>
+          <a href="#" class="impact__item">
+            <span class="material-symbols-outlined impact__item-icon">
+              foundation
+            </span>
+            <div class="impact__item-title">Gebouwen & bouwsector</div>
+          </a>
+          <a href="#" class="impact__item">
+            <span class="material-symbols-outlined impact__item-icon">
+              conveyor_belt
+            </span>
+            <div class="impact__item-title">Maakindustrie & logistiek</div>
+          </a>
+          <a href="#" class="impact__item">
+            <span class="material-symbols-outlined impact__item-icon">
+              power
+            </span>
+            <div class="impact__item-title">Stralingsbescherming</div>
+          </a>
+          <a href="#" class="impact__item">
+            <span class="material-symbols-outlined impact__item-icon">
+              directions_car
+            </span>
+            <div class="impact__item-title">Voertuighomologatie</div>
+          </a>
+        </div>
+        <a href="#" class="solutions__button-chat blue-button"
+          >VIND METEEN WAT U ZOEKT MET VINCE
+          <img src="./img/chat.png" alt="Image" />
+        </a>
+      </div>
+    </section>
+    <section class="talent">
+      <div class="talent__container">
+        <h3 class="talent__title">Geef vleugels aan je talent</h3>
+        <div class="talent__wrap">
+          <div class="talent__left">
+            <div class="talent__text">
+              Quisque id dolor sit amet neque sagittis eleifend sit amet at
+              risus. Vivamus dui nisi, maximus eget tortor ornare, aliquet
+              ullamcorper sem. Nulla dictum nisi nec commodo eleifend. Nulla
+              vitae ante justo. Ut in faucibus nisl. Sed ullamcorper tellus ac
+              risus viverra mattis. Nullam sit amet iaculis ante. Mauris id
+              commodo magna.
+            </div>
+            <a href="#" class="white-button talent__button">
+              ONTDEK ONZE VACATURES
+              <span class="material-symbols-outlined"> arrow_forward_ios </span>
+            </a>
+          </div>
+          <div class="talent__right">
+            <img
+              src="./img/talent1.png"
+              alt=""
+              class="talent__img talent__img--first"
+            />
+            <img
+              src="./img/talent2.png"
+              alt=""
+              class="talent__img talent__img--second"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <img src="./img/sea-bg.png" alt="" class="contact__img-bg" />
+      <div class="contact__container">
+        <h3 class="contact__title">Contacteer ons!</h3>
+        <div class="contact__buttons">
+          <a href="#" class="white-button contact__button">
+            ONZE VESTIGINGEN
+            <span class="material-symbols-outlined"> arrow_forward_ios </span>
+          </a>
+          <a href="#" class="white-button contact__button">
+            CONTACT
+            <span class="material-symbols-outlined"> arrow_forward_ios </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__top">
+          <div class="footer__top-info">
+            VOLG ONS
+            <ul class="footer__top-socials">
+              <li>
+                <a href="#"><img src="./img/fb.svg" alt="Image" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/twitter.svg" alt="Image" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/linkedin.svg" alt="Image" /></a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer__top-nav">
+            <li><a href="#">OVER ONS</a></li>
+            <li><a href="#">VESTIGINGEN</a></li>
+            <li><a href="#">JOBS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom-copy">© Vinçotte 2024</div>
+          <div class="footer__bottom-info">
+            <ul class="footer__bottom-nav">
+              <li><a href="#">Algemene voorwaarden</a></li>
+              <li>
+                <a href="#">Wettelijke bepalingen & gebruiksvoorwaarden</a>
+              </li>
+              <li><a href="#">Cookiebeleid</a></li>
+              <li><a href="#">Privacybeleid</a></li>
+            </ul>
+            <a class="footer__bottom-img" href="#">
+              <img src="./img/kiwa.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
